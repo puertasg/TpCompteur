@@ -23,5 +23,8 @@ public class Counter {
         return value;
     }
     
-    
+    public void inc()
+    {
+        this.value+=this.step;
+    }
 }

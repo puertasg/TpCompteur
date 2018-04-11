@@ -18,6 +18,12 @@ public class Counter {
         this.value = 0;
         this.step = 1;
     }
+    
+    public Counter(int v, int s)
+    {
+        this.value = v;
+        this.step = s;
+    }
 
     public int getValue() {
         return value;

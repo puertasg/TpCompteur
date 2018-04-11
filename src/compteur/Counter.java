@@ -18,16 +18,17 @@ public class Counter {
     {
         //appelle l'autre constructeur
         this(0,1);
+        
+        if(globalcounter == -1)
+        {
+            globalcounter = 0;
+        }
     }
     
     public Counter(int v, int s)
     {
         this.value = v;
         this.step = s;
-        if(globalcounter != -1)
-        {
-            globalcounter = 0;
-        }
     }
 
     public int getValue() {
@@ -36,6 +37,14 @@ public class Counter {
     
     public void setValue(int value) {
         this.value = value;
+    }
+    
+    public static int getGlobalcounter() {
+        return globalcounter;
+    }
+
+    public static void setGlobalcounter(int aGlobalcounter) {
+        globalcounter = aGlobalcounter;
     }
     
     public void inc()
@@ -52,13 +61,5 @@ public class Counter {
     public boolean equals(Counter c)
     {
         return this.value == c.getValue();
-    }
-
-    public static int getGlobalcounter() {
-        return globalcounter;
-    }
-
-    public static void setGlobalcounter(int aGlobalcounter) {
-        globalcounter = aGlobalcounter;
     }
 }

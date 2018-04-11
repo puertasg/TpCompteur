@@ -27,4 +27,9 @@ public class Counter {
     {
         this.value+=this.step;
     }
+    
+    public String toString()
+    {
+        return "valeur : " + this.value;
+    }
 }

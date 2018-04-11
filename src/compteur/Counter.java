@@ -36,7 +36,7 @@ public class Counter {
     
     public String toString()
     {
-        return "valeur : " + this.value;
+        return "valeur : " + this.value + "(incrément " + this.step + ")";
     }
     
     public boolean equals(Counter c)

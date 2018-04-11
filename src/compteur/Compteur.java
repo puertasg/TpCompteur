@@ -15,7 +15,21 @@ public class Compteur {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Counter c1 = new Counter();
+        c1.inc();
+        c1.inc();
+        
+        Counter c2 = new Counter(0,2);
+        c2.inc();
+        
+        if(c1.equals(c2))
+        {
+            System.out.println("les deux compteurs sont égaux");
+        }
+        else
+        {
+            System.out.println("les deux compteurs ne sont pas égaux");
+        }
     }
     
 }

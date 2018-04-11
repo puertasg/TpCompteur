@@ -45,13 +45,6 @@ public class Counter {
     
     public boolean equals(Counter c)
     {
-        if(this.value == c.getValue())
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return this.value == c.getValue();
     }
 }

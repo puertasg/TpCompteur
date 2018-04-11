@@ -10,5 +10,6 @@ package compteur;
  * @author diginamic05
  */
 public class Counter {
-    
+    private int value;
+    private int step;
 }

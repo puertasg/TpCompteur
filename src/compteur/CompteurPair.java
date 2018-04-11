@@ -17,6 +17,6 @@ public class CompteurPair extends Counter {
     
     public void inc()
     {
-        this.value+=2;
+        this.setValue(this.getValue()+2);
     }
 }

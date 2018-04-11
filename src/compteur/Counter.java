@@ -10,13 +10,13 @@ package compteur;
  * @author diginamic05
  */
 public class Counter {
-    protected int value;
+    private int value;
     private int step;
     
     public Counter()
     {
-        this.value = 0;
-        this.step = 1;
+        //appelle l'autre constructeur
+        this(0,1);
     }
     
     public Counter(int v, int s)
@@ -29,9 +29,13 @@ public class Counter {
         return value;
     }
     
+    public void setValue(int value) {
+        this.value = value;
+    }
+    
     public void inc()
     {
-        this.value+=this.step;
+        this.setValue(this.value + this.step);
     }
     
     public String toString()
@@ -50,4 +54,6 @@ public class Counter {
             return false;
         }
     }
+
+    
 }

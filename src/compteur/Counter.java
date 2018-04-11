@@ -12,4 +12,10 @@ package compteur;
 public class Counter {
     private int value;
     private int step;
+    
+    public Counter()
+    {
+        this.value = 0;
+        this.step = 1;
+    }
 }

@@ -18,6 +18,6 @@ public class CompteurImpair extends Counter {
     public void inc()
     {
         this.setValue(this.getValue()+2);
-        this.setGlobalcounter(this.getGlobalcounter()+2);
+        this.setGlobalcounter(Counter.getGlobalcounter()+2);
     }
 }

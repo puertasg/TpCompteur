@@ -30,7 +30,7 @@ public class Compteur {
         Counter c5 = c1;
         c5.setValue(10);
         
-        System.out.println("Compteur global : " + c1.getGlobalcounter());
+        System.out.println("Compteur global : " + Counter.getGlobalcounter());
         
         if(c1.equals(c5))
         {

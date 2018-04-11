@@ -10,7 +10,7 @@ package compteur;
  * @author diginamic05
  */
 public class Counter {
-    private int value;
+    protected int value;
     private int step;
     
     public Counter()
@@ -36,7 +36,7 @@ public class Counter {
     
     public String toString()
     {
-        return "valeur : " + this.value + "(incrément " + this.step + ")";
+        return "valeur : " + this.value + " (incrément " + this.step + ")";
     }
     
     public boolean equals(Counter c)

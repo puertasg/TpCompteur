@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package compteur;
+package moncompteur;
+
+import compteur.Counter;
 
 /**
  *
@@ -21,6 +23,9 @@ public class Compteur {
         
         Counter c2 = new Counter(0,2);
         c2.inc();
+        
+        System.out.println(c1);
+        System.out.println(c2);
         
         if(c1.equals(c2))
         {

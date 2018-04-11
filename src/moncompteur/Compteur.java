@@ -27,7 +27,10 @@ public class Compteur {
         CompteurPair c3 = new CompteurPair();
         CompteurImpair c4 = new CompteurImpair();
         
-        if(c1.equals(c2))
+        Counter c5 = c1;
+        c5.setValue(10);
+        
+        if(c1.equals(c5))
         {
             System.out.println("les deux compteurs sont égaux");
         }
